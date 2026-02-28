@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+
+@layer theme, base, components, utilities;
+
+@theme {
+    --color-primary: #605DFF;
+    --color-secondary: #F43098;
+    --color-background: #F8FAFC;
+    --color-text-1: #0F172A;
+    --color-text-2: #334155;
+    --color-text-3: #646466 ;
+}
+
+@layer base {
+    :root {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        @apply overflow-x-hidden bg-background capitalize
+    }
+
+    img {
+        @apply inline-block object-contain w-full h-full
+    }
+    button{
+        @apply cursor-pointer
+    }
+
+
+
+
+}
+
+@layer components {
+
+    .container {
+        @apply m-auto  md:px-0
+    }
+
+   
+
+    .active {
+        @apply text-primary!
+    }
+
+
+
+
+
+}
+
+@layer utilities {}
